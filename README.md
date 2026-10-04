@@ -16,4 +16,15 @@
 
 ## 当前阶段
 
-D0：仅建立最小研究仓库结构；尚未核实具体白水力学主张，也未开发教学、模拟或动画。
+基础资料整理阶段 D2-E 已完成。当前内容仍属于研究与学习草稿；具体白水技术、动作效果及正式教程结论需经过逐主题 claim 核实后才能进入正式教程。
+
+## 知识导航
+
+1. [当前基础物理框架](knowledge/foundations-v0.1.md)：回答“我们目前认为哪些基础概念成立、哪些仍未知”。
+2. [正式主张池及核实状态](knowledge/claims.md)：当前尚无 Verified claim。
+3. [研究缺口](knowledge/research-gaps.md)：当前真正缺少证据的问题。
+4. [概念学习卡片](learning/concept-cards/)：ADHD 友好的概念学习草稿。
+5. [问题与证据导航](sources/evidence-map.md)：按问题寻找相关论文和证据。
+6. [论文阅读卡片](sources/paper-notes/)：24 篇论文的标准化阅读卡片。
+7. [来源异常登记](sources/discrepancies.md)：来源内部冲突和待核实异常。
+8. [论文阅读路线](sources/reading-route.md)：论文阅读优先级与路线。
