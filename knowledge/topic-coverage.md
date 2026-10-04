@@ -1,0 +1,252 @@
+# Packraft Physics Lab｜D3 主题覆盖清单
+
+审查日期：2026-10-04。基线：`b0fe2ebdbf8f1bcd80dfa5b305dce2894112833e`。仅整理当前仓库的覆盖情况与学习顺序，不创建物理结论，不新增来源，不修改 claims 或 candidate 状态。
+
+## 范围与读法
+
+- 扫描当前仓库全部文件（排除 Git 内部文件）：README、研究协议、claims、foundations、research-gaps、来源索引与阅读路线、evidence-map、discrepancies、24 张 SRC 论文卡、论文卡一致性检查、18 张 concept cards 及 `.gitignore`。原 PDF、译稿和图片未纳入仓库；本次未回读它们，未联网。
+- 下文 **F§** 指 [foundations-v0.1](foundations-v0.1.md) 的章节；**EM** 指 [evidence-map](../sources/evidence-map.md) 的编号项目；**G** 指 [research-gaps](research-gaps.md) 的问题编号。论文链接指向已有阅读卡，页码沿用卡片的 PDF 物理页序。
+- “当前证据等级”沿用 EM 的 **强／中／弱／缺口**，只针对注明的对象与工况；基础定义按 F 的教学简化或工程近似记录，不强配实验等级。阅读路线的 S/A/B/C 与本清单的 A–D 分类均不是证据等级。
+- “缺独立专题”检查有无以该主题为中心的学习章节或概念卡；EM 有同名问题不等于已有独立学习专题。“缺外部资料”指相对当前学习或专项核实范围还缺哪类资料，仅登记需求，不启动检索。
+- 本批 24 篇未提供 packraft 直接实验：16 项的 packraft 专项响应均缺直接证据；这不妨碍学习一般定义，也不表示整个领域没有研究。综述、译稿、卡片不增加独立实验证据；SRC-006～008 的复用及 SRC-009／010 的重叠不重复计证。
+- [claims](claims.md) 只有模板，没有实际主张或 Verified 记录。下文“可学习／可制作基础动画”均指保留条件的学习草稿与概念示意；正式教程仍受 [研究协议](../RESEARCH_PROTOCOL.md) 约束，动画不作为证据。
+- 沿用 [discrepancies](../sources/discrepancies.md) 的异常隔离：试程、缩尺比、艇型性能对应、稳性角度、沉降符号、受力量纲的冲突不作参数、排名或确定结果。本清单不解决异常。
+
+## 16 个主题的覆盖记录
+
+### 01｜流体力学
+
+- 当前已有 foundations：F§4 表面压力／黏性作用与受力分账，§6 静水浮心，§9 相对水速，§11 附加质量，§12 阻尼；覆盖选定基础概念，不是完整流体力学课程。
+- concept cards：[relative-water-velocity](../learning/concept-cards/relative-water-velocity.md)、[drag](../learning/concept-cards/drag.md)、[added-mass](../learning/concept-cards/added-mass.md)、[damping](../learning/concept-cards/damping.md)、[center-of-buoyancy](../learning/concept-cards/center-of-buoyancy.md)、[shear-layer](../learning/concept-cards/shear-layer.md)、[eddy](../learning/concept-cards/eddy.md)、[wave](../learning/concept-cards/wave.md)、[hydraulic-jump](../learning/concept-cards/hydraulic-jump.md)、[hole-roller](../learning/concept-cards/hole-roller.md)、[boil-turbulence](../learning/concept-cards/boil-turbulence.md)。
+- evidence-map 项目：EM 4 阻力、6 静稳性、7 柔性、8 流速梯度、9 剪切层、10 回水、11 水跃／浪／hole、12 河床、15 直接证据缺口。
+- SRC 论文：[SRC-003](../sources/paper-notes/SRC-003.md) 载荷计算；[SRC-004](../sources/paper-notes/SRC-004.md)／[SRC-005](../sources/paper-notes/SRC-005.md) 阻力模型；[SRC-008](../sources/paper-notes/SRC-008.md) 静水力；[SRC-009](../sources/paper-notes/SRC-009.md)／[SRC-010](../sources/paper-notes/SRC-010.md) 水弹性综述；[SRC-014](../sources/paper-notes/SRC-014.md)／[SRC-018](../sources/paper-notes/SRC-018.md) 混合层；[SRC-015](../sources/paper-notes/SRC-015.md)／[SRC-016](../sources/paper-notes/SRC-016.md)／[SRC-017](../sources/paper-notes/SRC-017.md) 水跃；[SRC-019](../sources/paper-notes/SRC-019.md)／[SRC-020](../sources/paper-notes/SRC-020.md) 河床流动；[SRC-024](../sources/paper-notes/SRC-024.md) 仅作模型边界对照。
+- research gap：G1、2、4、6、7A、7B、8；F§16 的惯性／阻尼参数和模型适用范围仍未解决。不同流场资料不能拼成艇体响应验证。
+- 当前证据等级：分项评估；规则水槽水平剪切层为强，阻力／静水力／回水／水跃／河床为中，柔性迁移为弱，目标 packraft 响应为缺口；没有全主题统一强度。
+- 是否缺独立专题：部分缺；已有基础框架与分概念卡，缺系统的流体力学学习章节。
+- 是否缺外部资料：选定入门概念暂不缺；完整基础理论出处、天然三维流场和专项迁移核实缺。
+- 是否缺 packraft 直接证据：是，缺流场—船体载荷—运动的专项验证。
+- 是否适合现在学习：是，**A**；先学现有量的区别与有限工况，hole 安全和白水响应不在此许可范围。
+- 是否适合现在制作基础动画：是，限已有相对速度、压力分账、平均／瞬时流场等概念示意；不预测实际控船或危险等级。
+
+### 02｜桨叶受力
+
+- 当前已有 foundations：F§2 系统边界、§4 内外力与测量区别、§9 局部相对来流、§11 启动惯性、§13 输入与受力响应。
+- concept cards：[paddle-force](../learning/concept-cards/paddle-force.md)、[force](../learning/concept-cards/force.md)、[relative-water-velocity](../learning/concept-cards/relative-water-velocity.md)、[added-mass](../learning/concept-cards/added-mass.md)。
+- evidence-map 项目：EM 1 推进力、2 抓水变量、13 控制力矩、15 直接证据缺口。
+- SRC 论文：[SRC-001](../sources/paper-notes/SRC-001.md) p.4、6–8 桨型测力与全浸没平移模型；[SRC-005](../sources/paper-notes/SRC-005.md) p.7、9–10 方向投影；[SRC-003](../sources/paper-notes/SRC-003.md) p.7–10 固定艇姿计算；[SRC-002](../sources/paper-notes/SRC-002.md)、[SRC-013](../sources/paper-notes/SRC-013.md)、[SRC-023](../sources/paper-notes/SRC-023.md) 分别提供桨轴、系留拉力、单点压力的测量边界。
+- research gap：EM 1、13、15 保留三维非定常桨力缺口；G5 白水支撑、G7B 强掺气。现有推进证据不验证支撑恢复。
+- 当前证据等级：中，限桨型测力和静水推进模型；实际控制为弱，packraft 白水合力为缺口。
+- 是否缺独立专题：基础不缺，已有 paddle-force 卡；白水三维受力专题缺。
+- 是否缺外部资料：基础入门暂不缺；入出水、旋转、自由水面／掺气与控制受力核实缺。
+- 是否缺 packraft 直接证据：是，缺紊动来流下的合力、方向和有效推进分量。
+- 是否适合现在学习：是，**A**；可学方向投影、启动模型和测量量的区别。
+- 是否适合现在制作基础动画：是，限力的分解和明确假设的启动示意；不画通用升阻比例、桨型效率排名或支撑能力。
+
+### 03｜力矩
+
+- 当前已有 foundations：F§7 专节，结合§3／8 三轴、§5／6 重浮力作用线、§10 惯量、§13 控制边界。
+- concept cards：[torque](../learning/concept-cards/torque.md)、[roll-pitch-yaw](../learning/concept-cards/roll-pitch-yaw.md)、[force](../learning/concept-cards/force.md)。
+- evidence-map 项目：EM 6 静态复原臂、8 跨流速梯度、13 桨控偏航／横滚、15 直接证据缺口。
+- SRC 论文：[SRC-003](../sources/paper-notes/SRC-003.md) p.7–10 固定 K1 多方向力矩；[SRC-006](../sources/paper-notes/SRC-006.md) p.3、6 与 [SRC-008](../sources/paper-notes/SRC-008.md) p.5–7 静水力臂例子；[SRC-021](../sources/paper-notes/SRC-021.md) p.6–8 传力框架。
+- research gap：G1、3、5；F§7／10／16 保留角动量基础出处、惯量与实际响应缺口。torque 卡的概括需按 F§7 的轴和作用线条件读。
+- 当前证据等级：定义为教学简化；静水例子为中，实际控制为弱，跨线自由运动为缺口；未获得正式核实等级。
+- 是否缺独立专题：否，已有 F§7 与 torque 卡；专项动态响应仍缺。
+- 是否缺外部资料：定义入门暂不缺；完整角动量／转动惯量基础出处和自由响应核实缺。
+- 是否缺 packraft 直接证据：是，缺各轴力矩—运动、惯性与传力标定。
+- 是否适合现在学习：是，**A**；先学参考点、轴、作用线与力臂，不推定转动量或翻船方向。
+- 是否适合现在制作基础动画：是，限几何力臂与三轴标签；力矩箭头和实测转动轨迹分开，实际轨迹不补画。
+
+### 04｜抓水
+
+- 当前已有 foundations：F§9 参考系、§11 桨叶启动近似、§13 桨运动与真实受力响应；没有抓水专节。
+- concept cards：无独立抓水卡；相关为 [paddle-force](../learning/concept-cards/paddle-force.md)、[relative-water-velocity](../learning/concept-cards/relative-water-velocity.md)、[added-mass](../learning/concept-cards/added-mass.md)。
+- evidence-map 项目：EM 2 同名项目，关联 EM 1、3、15。
+- SRC 论文：[SRC-001](../sources/paper-notes/SRC-001.md)／[SRC-005](../sources/paper-notes/SRC-005.md) 相对运动与投影受力；[SRC-022](../sources/paper-notes/SRC-022.md) p.4–5 外部参考系 slip；[SRC-002](../sources/paper-notes/SRC-002.md) 力时间曲线；[SRC-023](../sources/paper-notes/SRC-023.md) 只提供入水时间边界，均不直接验证“抓水”术语。
+- research gap：EM 2、15 保留术语可测含义、感觉—受力关系及零滑移最优性缺口；G5、7B 仅关联支撑与掺气，不是抓水独立研究题。
+- 当前证据等级：弱，相关变量有资料，统一指标未经操作化验证；packraft 抓水感—真实受力为缺口。
+- 是否缺独立专题：是；已有证据问题，缺学习专题／概念卡。
+- 是否缺外部资料：是，专项指标、主观感觉与同步受力／运动的验证资料缺。
+- 是否缺 packraft 直接证据：是。
+- 是否适合现在学习：有限适合，**B**；先拆读已有变量，不能把“桨固定在水里”或感觉良好当效率证据。
+- 是否适合现在制作基础动画：有限适合，复用参考系、入水时间和投影示意；暂不制作“抓水成功”判据或动作教学动画。
+
+### 05｜身体动力链
+
+- 当前已有 foundations：F§2 整体／子系统边界、§4 接触传力、§5 质心、§10 惯量、§13 动作输入；仅框架，未覆盖完整身体动力链。
+- concept cards：无独立动力链卡；[force](../learning/concept-cards/force.md)、[paddle-force](../learning/concept-cards/paddle-force.md)、[center-of-mass](../learning/concept-cards/center-of-mass.md) 是相关入口。
+- evidence-map 项目：无独立项目；EM 3、13、15 提到传力及缺口。
+- SRC 论文：[SRC-021](../sources/paper-notes/SRC-021.md) p.6–8 人—桨—脚踏—座位分析框架与同步测量需求；[SRC-022](../sources/paper-notes/SRC-022.md) 关节轨迹仅为运动学；[SRC-023](../sources/paper-notes/SRC-023.md) 同步信号不等于完整传力测量；[SRC-005](../sources/paper-notes/SRC-005.md) 整体一维模型不分辨内部传力。
+- research gap：G3 人体移动量级、G5 接触传力比例／时序；EM 13、15 的完整传力缺口。没有动力链独立研究题。
+- 当前证据等级：弱，主要是综述框架、轨迹和方法边界；完整同步传力为缺口。
+- 是否缺独立专题：是，缺章节、概念卡与独立 EM 项目。
+- 是否缺外部资料：是，身体各环节运动／力、接触传力及动作因果效果资料缺。
+- 是否缺 packraft 直接证据：是，座位、脚撑、大腿绑带等配置的传力资料缺。
+- 是否适合现在学习：仅可读系统边界和研究框架，整体归 **C**；不足以形成发力顺序、各环节贡献或最佳动作课程。
+- 是否适合现在制作基础动画：仅可画系统组成和待测接触位置；暂不画已验证的动力链时序、传力比例或技术收益。
+
+### 06｜前划效率
+
+- 当前已有 foundations：F§2／4 受力分账、§9 相对水速、§12 耗能、§13 推进响应；没有效率专节。
+- concept cards：无独立效率卡；[paddle-force](../learning/concept-cards/paddle-force.md)、[drag](../learning/concept-cards/drag.md)、[force](../learning/concept-cards/force.md) 可作前置。
+- evidence-map 项目：EM 1 推进、3 桨频／艇速、4 阻力、15 直接证据缺口；没有独立效率项目。
+- SRC 论文：[SRC-004](../sources/paper-notes/SRC-004.md) p.4–7 功率／水中能量／效率工程模型，缺直接功率实测；[SRC-005](../sources/paper-notes/SRC-005.md) 投影推进和主动阻力；[SRC-001](../sources/paper-notes/SRC-001.md) 模型冲量不是人体效率；[SRC-021](../sources/paper-notes/SRC-021.md) 综述不增加独立验证。
+- research gap：EM 1、3、4、15 的推进、节奏与阻力缺口；G4、8 关联柔性和配置。人体代谢效率、机械推进效率与艇速表现尚缺独立专题核实。
+- 当前证据等级：相关推进／阻力模型为中；动作提高效率的因果效果及 packraft 效率为缺口。
+- 是否缺独立专题：是。
+- 是否缺外部资料：是，效率口径、直接功率／能量测量及前划动作对照资料缺。
+- 是否缺 packraft 直接证据：是。
+- 是否适合现在学习：有限适合，**B**；先读 SRC-004 的分账与假设，再读 SRC-005，不把模型效率或艇速关联当最优动作证明。
+- 是否适合现在制作基础动画：有限适合，限已有能量分账的条件示意；不填通用效率百分比、人体能耗或动作改善幅度。
+
+### 07｜加速
+
+- 当前已有 foundations：F§2／4 系统及净受力、§9 相对水速、§11 附加质量、§13 输入与响应；无加速专节。
+- concept cards：[force](../learning/concept-cards/force.md) 直接覆盖静水起步／滑行；[paddle-force](../learning/concept-cards/paddle-force.md)、[drag](../learning/concept-cards/drag.md)、[added-mass](../learning/concept-cards/added-mass.md) 为前置，无同名卡。
+- evidence-map 项目：EM 1、3、4、15；无独立加速项目。
+- SRC 论文：[SRC-005](../sources/paper-notes/SRC-005.md) p.5–6、9–13 减速、起步与逐渐加速实测／模型；[SRC-002](../sources/paper-notes/SRC-002.md) p.3–5 力曲线与艇加速度时刻；[SRC-001](../sources/paper-notes/SRC-001.md) 桨叶启动模型，不能混作整艇加速实测。
+- research gap：EM 3、4、15 的节奏—净推进—速度与阻力参数；G4、8 关联船形／配置。桨叶加速度和整艇加速度需要分开。
+- 当前证据等级：中，限两名静水划手的一维模型与相关小样本实测；packraft 白水加速为缺口。
+- 是否缺独立专题：部分缺；force 卡覆盖基础起步，缺独立加速学习单元。
+- 是否缺外部资料：基础入门暂不缺；专项参数、白水来流和动作提高加速的验证缺。
+- 是否缺 packraft 直接证据：是。
+- 是否适合现在学习：是，**A**；范围为已有静水一维例子的净推进、减速和参数边界。
+- 是否适合现在制作基础动画：是，限力与速度的区别、起步／滑行概念示意；不采用未标定系数或定量加速预测。
+
+### 08｜桨频
+
+- 当前已有 foundations：F§13 包含时机／动作与响应分类，§9 提供速度区分；没有桨频定义和关系专节。
+- concept cards：无独立桨频卡；[paddle-force](../learning/concept-cards/paddle-force.md)、[force](../learning/concept-cards/force.md) 仅涉及节奏和力历程。
+- evidence-map 项目：EM 3 同名关系项目、15 直接证据缺口。
+- SRC 论文：[SRC-002](../sources/paper-notes/SRC-002.md) p.3–5 精英静水桨频试次；[SRC-005](../sources/paper-notes/SRC-005.md) p.11–13 左右完整周期频率模型；[SRC-004](../sources/paper-notes/SRC-004.md) 灵敏度模型；[SRC-013](../sources/paper-notes/SRC-013.md) 系留计数方法，不是自由艇速证据；[SRC-021](../sources/paper-notes/SRC-021.md) 综述。
+- research gap：EM 3、15 保留最优节奏及白水速度关系；G 无独立题，不表示缺口关闭。SRC-002 试程／统计异常保持待核实。
+- 当前证据等级：中，限小样本静水关联与条件模型；packraft 最优桨频为缺口。
+- 是否缺独立专题：是；已有 EM 专项，缺概念卡／学习章节。
+- 是否缺外部资料：是，统一计数口径后的因果干预与目标工况验证缺。
+- 是否缺 packraft 直接证据：是。
+- 是否适合现在学习：有限适合，**B**；可学频率定义、力曲线与持续时间，不形成“加桨频必加速”或最优节奏处方。
+- 是否适合现在制作基础动画：有限适合，限周期／桨次口径和力时间示意；不把条件指数或试次频率当通用关系。
+
+### 09｜流速差
+
+- 当前已有 foundations：F§9 相对水速专节、§4 载荷分账、§7／8 力矩与多轴边界；已有基础，船体跨梯度响应未验证。
+- concept cards：[relative-water-velocity](../learning/concept-cards/relative-water-velocity.md)、[shear-layer](../learning/concept-cards/shear-layer.md)、[torque](../learning/concept-cards/torque.md)。
+- evidence-map 项目：EM 8 船头／船尾不同流速、9 剪切层、2 参考系、15 直接证据缺口。
+- SRC 论文：[SRC-001](../sources/paper-notes/SRC-001.md)／[SRC-005](../sources/paper-notes/SRC-005.md)／[SRC-022](../sources/paper-notes/SRC-022.md) 相对运动与参考系；[SRC-014](../sources/paper-notes/SRC-014.md) p.5–17／[SRC-018](../sources/paper-notes/SRC-018.md) p.12–21 水槽速度过渡；[SRC-003](../sources/paper-notes/SRC-003.md) 仅提供力矩变量入口，不是跨梯度研究。
+- research gap：G1、EM 8；同一艇的局部三维流速、压力、力矩与自由运动缺同步验证。
+- 当前证据等级：参考系定义为教学简化；限定水槽剪切观测为强，天然推广为中；目标艇体跨梯度响应为缺口。
+- 是否缺独立专题：部分缺；相对水速基础不缺，流速差—艇体响应专题缺。
+- 是否缺外部资料：定义入门暂不缺；跨梯度载荷与运动的定向验证缺。
+- 是否缺 packraft 直接证据：是。
+- 是否适合现在学习：有限适合，**B**；可学速度差与空间分布，不据两端水速指定旋转中心、侧倾或翻船方向。
+- 是否适合现在制作基础动画：有限适合，限同参考系速度箭头、局部速度过渡；不从水速箭头自动生成船力或运动轨迹。
+
+### 10｜回水线
+
+- 当前已有 foundations：F§9 相对来流、§8 耦合边界、§13 状态与输入、§16 跨线缺口；没有回水线专节。
+- concept cards：[shear-layer](../learning/concept-cards/shear-layer.md)、[eddy](../learning/concept-cards/eddy.md)、[relative-water-velocity](../learning/concept-cards/relative-water-velocity.md)；[edge](../learning/concept-cards/edge.md) 只作动作边界入口。
+- evidence-map 项目：EM 9 剪切层、10 回水内部、8 艇体跨梯度、13 控制、15 直接证据缺口。
+- SRC 论文：[SRC-014](../sources/paper-notes/SRC-014.md) p.5–17 方形侧腔水平 PIV；[SRC-018](../sources/paper-notes/SRC-018.md) p.12–21、38–46 突然展宽；[SRC-003](../sources/paper-notes/SRC-003.md)／[SRC-011](../sources/paper-notes/SRC-011.md) 仅分别提供载荷模型／路线入口。
+- research gap：G1、EM 8～10、15；天然三维界面、船旁压力及过线响应缺证据。
+- 当前证据等级：强，限两类规则水槽水平剪切层；天然推广为中，跨线艇体响应为缺口。
+- 是否缺独立专题：部分缺；shear-layer／eddy 卡已有概念覆盖，天然回水线专题缺。
+- 是否缺外部资料：水槽概念学习暂不缺；天然三维测量及艇体跨线验证缺。
+- 是否缺 packraft 直接证据：是。
+- 是否适合现在学习：有限适合，**B**；可学有限厚度、平均／瞬时场与界面定义，不能转成过线动作指南。
+- 是否适合现在制作基础动画：有限适合，限水槽条件下的水平流场、泡沫外观与速度界面区别；船体响应留待测。
+
+### 11｜横渡 ferry
+
+- 当前已有 foundations：无 ferry 专节；F§3 平移／转动区分、§9 相对速度、§13 航向／路线作为目标状态是前置。
+- concept cards：无 ferry 卡；相关为 [relative-water-velocity](../learning/concept-cards/relative-water-velocity.md)、[paddle-force](../learning/concept-cards/paddle-force.md)、[shear-layer](../learning/concept-cards/shear-layer.md)、[eddy](../learning/concept-cards/eddy.md)。
+- evidence-map 项目：无 ferry 独立项目；EM 8、9、10、13、15 仅相关，不能算横渡动作证据。
+- SRC 论文：无直接研究 ferry 的已收录来源；[SRC-005](../sources/paper-notes/SRC-005.md) 一维静水模型、[SRC-014](../sources/paper-notes/SRC-014.md)／[SRC-018](../sources/paper-notes/SRC-018.md) 无艇流场、[SRC-003](../sources/paper-notes/SRC-003.md) 固定艇姿计算仅为前置／边界参照。
+- research gap：G1、EM 13／15 仅覆盖部分前置；横渡的流场—航向—桨力—侧倾—横向路径尚无独立题及专项验证记录。
+- 当前证据等级：缺口，针对 ferry 专项动作；前置间接机制不能抵消。
+- 是否缺独立专题：是，缺章节、卡片和独立证据问题。
+- 是否缺外部资料：是，缺可追溯的横渡专项教学证据及受力／运动验证。
+- 是否缺 packraft 直接证据：是。
+- 是否适合现在学习：只学上述前置，整体归 **D**；按拟用于白水动作教学的用途设门槛，补证据前不形成横渡角度、立刃或施桨处方。
+- 是否适合现在制作基础动画：仅可复用相对速度／航向标签；暂不制作 ferry 机制结论、成功路径或动作教程动画。
+
+### 12｜回旋艇进回水
+
+- 当前已有 foundations：无进回水专节；F§7／8 力矩与多轴、§9 相对来流、§13 路线与状态、§16 跨线缺口为前置。
+- concept cards：无进回水卡；相关为 [eddy](../learning/concept-cards/eddy.md)、[shear-layer](../learning/concept-cards/shear-layer.md)、[edge](../learning/concept-cards/edge.md)、[torque](../learning/concept-cards/torque.md)。
+- evidence-map 项目：EM 14 白水路径关联，8～10 流场／跨线，13 控制，15 迁移缺口。
+- SRC 论文：[SRC-011](../sources/paper-notes/SRC-011.md) p.5–10 单个左侧上水门的轨迹代理与耗时关联；[SRC-012](../sources/paper-notes/SRC-012.md) p.3–9 异质综述；[SRC-014](../sources/paper-notes/SRC-014.md)／[SRC-018](../sources/paper-notes/SRC-018.md) 无艇流场；[SRC-003](../sources/paper-notes/SRC-003.md) 不是同工况耦合验证。
+- research gap：G1、EM 13～15；进回水路线、局部流场、桨力与侧倾力矩缺同步验证。头部至杆距离不是艇质心路径或转弯半径。
+- 当前证据等级：中，限回旋艇单门观察性路线关联；动作因果、固定最优路线和 packraft 迁移为缺口。
+- 是否缺独立专题：是；已有路径证据问题，缺进回水学习专题。
+- 是否缺外部资料：是，缺专项动作因果、不同门位／水况及载荷验证。
+- 是否缺 packraft 直接证据：是；回旋艇原对象的有限证据和 packraft 迁移须分开。
+- 是否适合现在学习：可读已有轨迹观察与限制，整体归 **D**；补证据前不形成进回水立刃、桨法或固定路线动作教程。
+- 是否适合现在制作基础动画：有限适合，限按原研究定义展示分段轨迹与计时的观察示意；不将它画成已验证受力机制或通用动作。
+
+### 13｜edge / 立刃
+
+- 当前已有 foundations：F§5／6 质心／浮心、§7／8 力矩与三轴、§13 edge 为目标状态、§16 动态稳性缺口；不是已验证动作机制。
+- concept cards：[edge](../learning/concept-cards/edge.md)、[roll-pitch-yaw](../learning/concept-cards/roll-pitch-yaw.md)、[center-of-mass](../learning/concept-cards/center-of-mass.md)、[center-of-buoyancy](../learning/concept-cards/center-of-buoyancy.md)、[primary-secondary-stability](../learning/concept-cards/primary-secondary-stability.md)。术语沿用现有卡的“侧倾控制”。
+- evidence-map 项目：EM 6 静稳性、8／9 跨线与剪切层、13 控制、15 直接证据缺口。
+- SRC 论文：[SRC-008](../sources/paper-notes/SRC-008.md) p.5–7 静水框架；[SRC-006](../sources/paper-notes/SRC-006.md)／[SRC-007](../sources/paper-notes/SRC-007.md) 同系列静态参照；[SRC-014](../sources/paper-notes/SRC-014.md) 无艇流场；[SRC-003](../sources/paper-notes/SRC-003.md) 固定艇姿模型；[SRC-021](../sources/paper-notes/SRC-021.md) 传力需求，均不验证 edge 动作效果。
+- research gap：G1、2、3、5、8；侧倾后的静水几何、人体传力和动态水力均有缺口；稳性角度异常不作动作参数。
+- 当前证据等级：中，限静水稳性框架；实际控制入口为弱，跨线 edge 因果效果为缺口。
+- 是否缺独立专题：基础不缺，已有 edge 卡；专项动作证据专题缺。
+- 是否缺外部资料：是，缺侧倾干预、自由运动、人体传力与失效边界资料。
+- 是否缺 packraft 直接证据：是。
+- 是否适合现在学习：可学船体倾角／上身姿态区分与静水边界，整体归 **D**；补证据前不指定抬哪侧、通用倾角或翻船方向。
+- 是否适合现在制作基础动画：有限适合，限倾角标尺、上身姿态线及静水几何示意；不画未测浮心轨迹、跨线收益或恢复结果。
+
+### 14｜转弯与转弯半径
+
+- 当前已有 foundations：F§3／8 偏航与横移区分、§7 力矩、§10 惯量、§13 航向／路线；无半径专节。
+- concept cards：无独立转弯／半径卡；相关为 [torque](../learning/concept-cards/torque.md)、[roll-pitch-yaw](../learning/concept-cards/roll-pitch-yaw.md)、[relative-water-velocity](../learning/concept-cards/relative-water-velocity.md)、[edge](../learning/concept-cards/edge.md)。
+- evidence-map 项目：EM 5 产品带舵转弯、13 偏航控制、14 路线代理、8 跨梯度、15 直接证据缺口；无半径独立项目。
+- SRC 论文：[SRC-006](../sources/paper-notes/SRC-006.md) p.4、6／[SRC-007](../sources/paper-notes/SRC-007.md) p.5–7／[SRC-008](../sources/paper-notes/SRC-008.md) p.5、7–8 的 25°人工舵试验；[SRC-003](../sources/paper-notes/SRC-003.md) 固定艇姿力矩；[SRC-011](../sources/paper-notes/SRC-011.md) p.5–10 路线关联，不测实际转弯半径。
+- research gap：EM 8、13～15，G1、8；划桨／侧倾控制与真实路径、侧滑和半径关系缺验证。SRC-007 性能对应异常保留，系列不重复计证。
+- 当前证据等级：中，限指定产品带舵转弯与单门路线关联；划桨控制入口为弱，packraft 半径／控船为缺口。
+- 是否缺独立专题：是。
+- 是否缺外部资料：是，缺转弯几何定义、自由转向受力／路径及动作干预的专项核实资料。
+- 是否缺 packraft 直接证据：是。
+- 是否适合现在学习：有限适合，**B**；可学偏航／横移区分和试验口径，不把 25°舵试验转成桨法或立刃处方。
+- 是否适合现在制作基础动画：有限适合，限运动名称与已有试验的路径记录示意；暂不建立速度—半径公式或预测边越立弯越小。
+
+### 15｜Boof
+
+- 当前已有 foundations：无 Boof 专节；F§3／8 俯仰／升沉区分、§7 力矩、§13 动作输入、§16 模型边界仅为前置。
+- concept cards：无 Boof 卡；[roll-pitch-yaw](../learning/concept-cards/roll-pitch-yaw.md)、[paddle-force](../learning/concept-cards/paddle-force.md)、[wave](../learning/concept-cards/wave.md)、[hydraulic-jump](../learning/concept-cards/hydraulic-jump.md)／[hole-roller](../learning/concept-cards/hole-roller.md) 只提供运动或水流背景。
+- evidence-map 项目：无 Boof 独立项目；EM 11 水跃／浪／hole、13 控制、15 缺口仅相关。
+- SRC 论文：无直接研究 Boof 的已收录来源；[SRC-015](../sources/paper-notes/SRC-015.md)／[SRC-016](../sources/paper-notes/SRC-016.md)／[SRC-017](../sources/paper-notes/SRC-017.md) 研究水流，不验证 Boof；[SRC-009](../sources/paper-notes/SRC-009.md)／[SRC-010](../sources/paper-notes/SRC-010.md) 机动艇砰击讨论不能迁移为 Boof 着水安全证据。
+- research gap：无 Boof 独立题；G5、6、7B 仅关联支撑、hole 和掺气背景，F§3 的垂向／腾空模型边界尚待验证；起跳、俯仰／升沉、桨与身体作用和着水全过程无专项验证记录。
+- 当前证据等级：缺口，针对 Boof 动作及安全；邻近水力或冲击资料不构成直接验证。
+- 是否缺独立专题：是，缺章节、卡片、独立证据问题和专项研究缺口条目。
+- 是否缺外部资料：是，缺专项动作机制、对象／工况和失败边界资料。
+- 是否缺 packraft 直接证据：是。
+- 是否适合现在学习：只学已有前置与未知边界，整体归 **D**；补证据前不形成起跳时机、桨法、身体动作或落差适用处方。
+- 是否适合现在制作基础动画：暂不适合 Boof 机制／动作动画；可复用俯仰与升沉的名称示意，不补画成功动作链或着水安全结果。
+
+### 16｜生物力学
+
+- 当前已有 foundations：F§2 系统边界、§5 质心、§10 惯量、§13 人体输入／传力响应；没有人体生物力学课程。
+- concept cards：无独立生物力学卡；[center-of-mass](../learning/concept-cards/center-of-mass.md)、[force](../learning/concept-cards/force.md)、[paddle-force](../learning/concept-cards/paddle-force.md)、[edge](../learning/concept-cards/edge.md) 为相关入口。
+- evidence-map 项目：无独立生物力学项目；EM 3 节奏／表现、6 质心、13 传力、14 路线代理、15 迁移缺口。
+- SRC 论文：[SRC-021](../sources/paper-notes/SRC-021.md) p.3、6–8 运动学／动力学区别与三维传力需求；[SRC-022](../sources/paper-notes/SRC-022.md) 静水翼桨关节轨迹；[SRC-012](../sources/paper-notes/SRC-012.md) 回旋力学／生理／技术关联综述；[SRC-002](../sources/paper-notes/SRC-002.md) 力曲线关联；[SRC-023](../sources/paper-notes/SRC-023.md) 同步测量边界。
+- research gap：G3、5 及 EM 13、15；完整关节力矩、接触传力和最佳技术缺验证。SRC-012 异质性与补充数据、SRC-022 样本／速度表述异常保留；不新增损伤或训练结论。
+- 当前证据等级：局部运动学／表现关联为中，完整传力框架为弱；packraft 动作因果与最优技术为缺口，无全主题统一等级。
+- 是否缺独立专题：是；已有相关综述／轨迹卡，缺基础学习章节与概念卡。
+- 是否缺外部资料：是，系统基础、全身三维动力学与具体动作干预资料缺。
+- 是否缺 packraft 直接证据：是。
+- 是否适合现在学习：有限适合，**B**；先学怎样区分运动学、动力学、代理指标和关联；完整身体动力链按第05项 C 处理。
+- 是否适合现在制作基础动画：有限适合，限标记点／整体质心区分、已记录运动轨迹与待测力的区别；不制作最佳发力或训练处方。
+
+## A–D 分类排序
+
+以下是基于现有覆盖范围的 D3 学习用途判断，保持用户的主题编号；同类内先列前置概念。D 优先于资料数量：某主题有观察证据，也可能因拟制作白水动作教程而归 D。分类不修改 EM、G 或 claims；没有任何主题因此取得正式教程资格。
+
+| 类别 | 主题排序 | 当前允许范围／分组理由 |
+|---|---|---|
+| **A：资料已经足够开始学习** | 01 流体力学 → 02 桨叶受力 → 03 力矩 → 07 加速 | 已有基础框架、概念卡和限定实例，足够开始对应基础学习；不是全部理论、packraft 参数或白水动作已完备。 |
+| **B：可学习基础机制，但需要补研究** | 09 流速差 → 10 回水线 → 04 抓水 → 08 桨频 → 06 前划效率 → 14 转弯与转弯半径 → 16 生物力学 | 有前置机制、变量或有限实测；主题指标、专项因果、天然条件或迁移仍不足。 |
+| **C：研究明显不足** | 05 身体动力链 | 当前主要是框架与测量需求，未形成完整同步传力证据；可读前置，不足以建立专项动作模型。 |
+| **D：安全相关，在补证据前不要形成动作教程** | 13 edge / 立刃 → 12 回旋艇进回水 → 11 横渡 ferry → 15 Boof | 按白水动作教学用途设门槛；已有倾角定义、轨迹观察或水流背景不验证动作收益、成功条件或失败边界。 |
+
+共 16 项：A 4、B 7、C 1、D 4，各主题只归一类。A／B 许可限于上述基础学习范围；若扩展成白水支撑、倾覆恢复、hole／强掺气安全或其他动作可靠性结论，仍遵守已有 G 的对应门槛与研究协议。
