@@ -1,20 +1,21 @@
 # Packraft Physics Lab｜论文目录与阅读路线
 
-原路线更新：2026-10-04；仓库索引整理：2026-10-04。
+原路线更新：2026-10-04；中文译稿索引更新：2026-10-04。
 
-整理依据：本地资料库根目录中的 `README_阅读路线.md`，收录其论文表中的全部 24 篇 PDF。以下分类、题名展示名、年份、阅读优先级、“对 packraft 的价值与边界”和建议阅读顺序均沿用原路线；新增 source_id、引用定位和文件 SHA-256。本次未研究具体物理结论，也未将阅读建议转成已核实主张。
+本索引以个人论文资料库的 `中文翻译/` 目录下 24 篇 Markdown 译稿为当前阅读入口，与原 PDF 索引一一对应，沿用 `SRC-001`～`SRC-024`。中文题名直接取自已有译稿标题；年份、分类、优先级、价值与边界及阅读顺序沿用原路线。本次仅更新资料定位与文件名称，未重新翻译、研究物理结论或修改已有主张。
 
 ## 使用与本地定位
 
 - source_id 的分配与引用规则见[来源索引](index.md)。本文件的 `src-001`～`src-024` 锚点保持稳定。
-- PDF 本体保留在仓库外。每条“本地 PDF”都是相对于个人论文资料库根目录的路径，保留原分类目录和原文件名；换设备时只需定位资料库根目录，不修改 source_id。路径不是仓库内下载链接。
-- 本次已核对 24 个路径均存在，并记录各自 SHA-256；尚未建立与 `C-...` 主张的证据关联。
-- 原路线记载依据 PDF 首页、摘要和相关结论整理。本次未重新查阅论文内容；题名展示名、作者标签、年份及阅读评价均为原路线信息，部分题名为简称，完整书目信息待原文核对。
+- “本地中文译稿”路径相对于个人论文资料库的 `中文翻译/` 根目录。命名为 `SRC-编号-分类目录-中文论文题名.md`；改名后仍保留在原分类目录内，图片资源和术语说明文件保留原位置。
+- 每条记录保留译稿改名前的文件名，并记录当前译稿 SHA-256。中文译稿与原论文使用同一 source_id，不作为另一篇独立论文或独立证据。
+- “原文 PDF”路径相对于论文资料库根目录，原 PDF 文件名与指纹继续保留，便于回查原文。译稿、图片和 PDF 本体均保留在仓库外，仓库只记录资料索引。
+- 本次核对了 24 篇译稿的标题与文件对应关系，未重新核实译文或原论文结论。原路线记载曾查阅 PDF 首页、摘要和相关结论；年份、原路线展示名及作者标签沿用原索引，完整书目信息待原文核对。引用具体证据时仍需记录原文页码、章节或图表及译稿对应位置。
 - S/A/B/C 是阅读收益排序，不代表论文质量或证据强度。S：优先精读；A：下一轮重点读；B：先看摘要、图和结论；C：需要时查。A（选读）保留原标记。
 
 ## 分类目录
 
-| 分类目录（相对资料库根目录） | 解决的问题（原路线） | 篇数 |
+| 分类目录（相对中文翻译根目录） | 解决的问题（原路线） | 篇数 |
 |---|---|---:|
 | `01_桨叶推进与划桨力学` | 桨叶怎样受力；一桨的力随时间怎样变化 | 3 |
 | `02_艇体水动力与性能` | 阻力、速度、稳定性、转弯；充气艇与柔性结构的对照 | 7 |
@@ -30,324 +31,420 @@
 #### SRC-001
 
 - source_id：`SRC-001`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`01_桨叶推进与划桨力学`
-- 题名（原路线展示名）：Sea kayak paddles
+- 中文题名（译稿标题）：海洋皮艇传统桨的水动力特性
+- 原路线题名（展示名）：Sea kayak paddles
 - 作者标签（原路线）：Hémon
 - 年份（原路线）：2018
 - 阅读优先级：**S**
 - 对 packraft 的价值与边界（原路线）：用桨周围水的惯性及阻力/升力解释“抓水”；研究的是海艇传统桨与现代桨，不能把效率排名照搬到白水桨。
-- 本地 PDF：`01_桨叶推进与划桨力学/Hemon2018_Sea_Kayak_Paddles.pdf`
-- 文件 SHA-256：`3b15a44433f404b58936526b70d875bfb7a0c58c5485fe798fab03586c862448`
+- 本地中文译稿：`01_桨叶推进与划桨力学/SRC-001-01_桨叶推进与划桨力学-海洋皮艇传统桨的水动力特性.md`
+- 译稿原文件名（改名前）：`Hemon2018_Sea_Kayak_Paddles_中文.md`
+- 中文译稿 SHA-256：`1287a941b8e0b05458c4366eb4242fcfe8f9c23b59c4715c5ce5f16f6b5aa1c8`
+- 原文 PDF：`01_桨叶推进与划桨力学/Hemon2018_Sea_Kayak_Paddles.pdf`
+- 原文 PDF SHA-256：`3b15a44433f404b58936526b70d875bfb7a0c58c5485fe798fab03586c862448`
 
 #### SRC-002
 
 - source_id：`SRC-002`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`01_桨叶推进与划桨力学`
-- 题名（原路线展示名）：Paddling Force Profiles
+- 中文题名（译稿标题）：精英竞速皮艇运动中不同桨频下的划桨力曲线
+- 原路线题名（展示名）：Paddling Force Profiles
 - 作者标签（原路线）：Gomes
 - 年份（原路线）：2015
 - 阅读优先级：**A**
 - 对 packraft 的价值与边界（原路线）：看不同桨频下的力—时间曲线，理解有效发力阶段；样本是精英静水竞速桨手。
-- 本地 PDF：`01_桨叶推进与划桨力学/Gomes2015_Paddling_Force_Profiles.pdf`
-- 文件 SHA-256：`b2ac167bc40429a0c1c641b7557f994dad3120444ce2060e470ef3e511c2c4e4`
+- 本地中文译稿：`01_桨叶推进与划桨力学/SRC-002-01_桨叶推进与划桨力学-精英竞速皮艇运动中不同桨频下的划桨力曲线.md`
+- 译稿原文件名（改名前）：`Gomes2015_Paddling_Force_Profiles_中文.md`
+- 中文译稿 SHA-256：`835b5d447854cba83203d4fdebcadd5cbb15d2c2d7af69a27c8ae81235a728a7`
+- 原文 PDF：`01_桨叶推进与划桨力学/Gomes2015_Paddling_Force_Profiles.pdf`
+- 原文 PDF SHA-256：`b2ac167bc40429a0c1c641b7557f994dad3120444ce2060e470ef3e511c2c4e4`
 
 #### SRC-003
 
 - source_id：`SRC-003`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`01_桨叶推进与划桨力学`
-- 题名（原路线展示名）：Kayak blade–hull interactions
+- 中文题名（译稿标题）：皮艇桨叶—船体水动力相互作用：面向自航模拟的体力等效法
+- 原路线题名（展示名）：Kayak blade–hull interactions
 - 作者标签（原路线）：Banks
 - 年份（原路线）：2014
 - 阅读优先级：**B**
 - 对 packraft 的价值与边界（原路线）：提醒桨与艇体流场相互影响；计算对象是竞速艇，文中的小幅阻力差不是 packraft 实测。
-- 本地 PDF：`01_桨叶推进与划桨力学/Kayak blade–hull interactions - A body force approach for self-propelled simulations.pdf`
-- 文件 SHA-256：`15c7d04e503b2fdd271ce3e382137fecacd35c7606802ddec43bd7a157e2cf8b`
+- 本地中文译稿：`01_桨叶推进与划桨力学/SRC-003-01_桨叶推进与划桨力学-皮艇桨叶—船体水动力相互作用：面向自航模拟的体力等效法.md`
+- 译稿原文件名（改名前）：`Kayak blade–hull interactions - A body force approach for self-propelled simulations_中文.md`
+- 中文译稿 SHA-256：`6711a2c63cc3a914185bb56cfe87a1ce902f7ff98de2c2f3a0df38488ae46eb2`
+- 原文 PDF：`01_桨叶推进与划桨力学/Kayak blade–hull interactions - A body force approach for self-propelled simulations.pdf`
+- 原文 PDF SHA-256：`15c7d04e503b2fdd271ce3e382137fecacd35c7606802ddec43bd7a157e2cf8b`
 
 ### 02｜艇体水动力与性能
 
 #### SRC-004
 
 - source_id：`SRC-004`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`02_艇体水动力与性能`
-- 题名（原路线展示名）：Performance prediction for Olympic kayaks
+- 中文题名（译稿标题）：奥运会皮艇的性能预测
+- 原路线题名（展示名）：Performance prediction for Olympic kayaks
 - 作者标签（原路线）：Jackson
 - 年份（原路线）：1995
 - 阅读优先级：**A**
 - 对 packraft 的价值与边界（原路线）：建立“桨效率—艇体阻力—功率—艇速”的预测链；参数属于奥运竞速艇。
-- 本地 PDF：`02_艇体水动力与性能/Performance prediction for Olympic kayaks.pdf`
-- 文件 SHA-256：`aa401496d9f2851ee8a8bf6eb3c447068e853bf10ef97e1fa9620cee88824ad6`
+- 本地中文译稿：`02_艇体水动力与性能/SRC-004-02_艇体水动力与性能-奥运会皮艇的性能预测.md`
+- 译稿原文件名（改名前）：`Performance prediction for Olympic kayaks_中文.md`
+- 中文译稿 SHA-256：`bdffada0385941ca20c89e2be73a7a4e45c76d6839f0b40b34b0d0e94db0a496`
+- 原文 PDF：`02_艇体水动力与性能/Performance prediction for Olympic kayaks.pdf`
+- 原文 PDF SHA-256：`aa401496d9f2851ee8a8bf6eb3c447068e853bf10ef97e1fa9620cee88824ad6`
 
 #### SRC-005
 
 - source_id：`SRC-005`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`02_艇体水动力与性能`
-- 题名（原路线展示名）：On the Physics of Kayaking
+- 中文题名（译稿标题）：论皮艇运动的物理学
+- 原路线题名（展示名）：On the Physics of Kayaking
 - 作者标签（原路线）：Prétot 等
 - 年份（原路线）：2022
 - 阅读优先级：**S**
 - 对 packraft 的价值与边界（原路线）：用实测桨力、放任减速和起步试验连接推力、阻力、加速度；模型是静水 K1。
-- 本地 PDF：`02_艇体水动力与性能/论皮划艇运动的物理学-english.pdf`
-- 文件 SHA-256：`5aab1fb1184fadad2a8ad7ec8de203d808d503888043f9ba747f46761a870701`
+- 本地中文译稿：`02_艇体水动力与性能/SRC-005-02_艇体水动力与性能-论皮艇运动的物理学.md`
+- 译稿原文件名（改名前）：`01_论皮划艇运动的物理学_中文.md`
+- 中文译稿 SHA-256：`1c4a70c8166037c94266479abaf99f50f7c36050159c0f631df22891fcd78c5b`
+- 原文 PDF：`02_艇体水动力与性能/论皮划艇运动的物理学-english.pdf`
+- 原文 PDF SHA-256：`5aab1fb1184fadad2a8ad7ec8de203d808d503888043f9ba747f46761a870701`
 
 #### SRC-006
 
 - source_id：`SRC-006`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`02_艇体水动力与性能`
-- 题名（原路线展示名）：Inflatable Kayak Evaluation Method
+- 中文题名（译稿标题）：充气皮艇开发的水动力性能评价方法
+- 原路线题名（展示名）：Inflatable Kayak Evaluation Method
 - 作者标签（原路线）：Ki
 - 年份（原路线）：2012
 - 阅读优先级：**B**
 - 对 packraft 的价值与边界（原路线）：借鉴倾斜、转弯和阻力测试的设计，作为充气艇系列的方法篇；试验艇与背包船不同。
-- 本地 PDF：`02_艇体水动力与性能/Ki2012_Inflatable_Kayak_Evaluation_Method.pdf`
-- 文件 SHA-256：`84cce15e17d99b81a3ae9f692ada72077de8285eca24574ffd76a20c2eea6992`
+- 本地中文译稿：`02_艇体水动力与性能/SRC-006-02_艇体水动力与性能-充气皮艇开发的水动力性能评价方法.md`
+- 译稿原文件名（改名前）：`Ki2012_Inflatable_Kayak_Evaluation_Method_中文.md`
+- 中文译稿 SHA-256：`71ec2554dc42da9129e21d1457b176108cbc3d48b5d5e7e59c086ee6a9b047e7`
+- 原文 PDF：`02_艇体水动力与性能/Ki2012_Inflatable_Kayak_Evaluation_Method.pdf`
+- 原文 PDF SHA-256：`84cce15e17d99b81a3ae9f692ada72077de8285eca24574ffd76a20c2eea6992`
 
 #### SRC-007
 
 - source_id：`SRC-007`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`02_艇体水动力与性能`
-- 题名（原路线展示名）：Inflatable Kayak Hydrodynamics
+- 中文题名（译稿标题）：充气皮艇开发的水动力性能评价
+- 原路线题名（展示名）：Inflatable Kayak Hydrodynamics
 - 作者标签（原路线）：Hah
 - 年份（原路线）：2013
 - 阅读优先级：**B**
 - 对 packraft 的价值与边界（原路线）：比较不同充气艇的稳性、转弯与阻力，帮助识别设计取舍；与 2015 篇有内容重叠。
-- 本地 PDF：`02_艇体水动力与性能/Hah2013_Inflatable_Kayak_Hydrodynamics.pdf`
-- 文件 SHA-256：`c113e7cdf4c4dd524259ffbecae533aa34cff2cf408371012015c548f062c531`
+- 本地中文译稿：`02_艇体水动力与性能/SRC-007-02_艇体水动力与性能-充气皮艇开发的水动力性能评价.md`
+- 译稿原文件名（改名前）：`Hah2013_Inflatable_Kayak_Hydrodynamics_中文.md`
+- 中文译稿 SHA-256：`a4829b173fbdce025bca42c0f79614e6c5e474cdc9fe7c79bad063f85d32bfb6`
+- 原文 PDF：`02_艇体水动力与性能/Hah2013_Inflatable_Kayak_Hydrodynamics.pdf`
+- 原文 PDF SHA-256：`c113e7cdf4c4dd524259ffbecae533aa34cff2cf408371012015c548f062c531`
 
 #### SRC-008
 
 - source_id：`SRC-008`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`02_艇体水动力与性能`
-- 题名（原路线展示名）：New Inflatable Kayak Hydrodynamics
+- 中文题名（译稿标题）：新型充气皮艇开发的水动力性能评价
+- 原路线题名（展示名）：New Inflatable Kayak Hydrodynamics
 - 作者标签（原路线）：Hah 等
 - 年份（原路线）：2015
 - 阅读优先级：**S**
 - 对 packraft 的价值与边界（原路线）：同一框架比较不同船底充气艇的稳性、转弯和阻力；只迁移比较方法，不迁移绝对数值。
-- 本地 PDF：`02_艇体水动力与性能/Hah2015_New_Inflatable_Kayak_Hydrodynamics.pdf`
-- 文件 SHA-256：`a9eb409b5048edeff05219f8a4ff34ec660eb423dc8f31f11753e17ddaabb8c0`
+- 本地中文译稿：`02_艇体水动力与性能/SRC-008-02_艇体水动力与性能-新型充气皮艇开发的水动力性能评价.md`
+- 译稿原文件名（改名前）：`Hah2015_New_Inflatable_Kayak_Hydrodynamics_中文.md`
+- 中文译稿 SHA-256：`bfc11610c5c7b80fdbdb9921bb10d38fd7abe370a24af3ddd8a96780c8a8a84f`
+- 原文 PDF：`02_艇体水动力与性能/Hah2015_New_Inflatable_Kayak_Hydrodynamics.pdf`
+- 原文 PDF SHA-256：`a9eb409b5048edeff05219f8a4ff34ec660eb423dc8f31f11753e17ddaabb8c0`
 
 #### SRC-009
 
 - source_id：`SRC-009`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`02_艇体水动力与性能`
-- 题名（原路线展示名）：Hydroelastic Inflatable Boats
+- 中文题名（译稿标题）：水弹性充气艇：相关文献与新的设计考虑
+- 原路线题名（展示名）：Hydroelastic Inflatable Boats
 - 作者标签（原路线）：Halswell 等
 - 年份（原路线）：2012
 - 阅读优先级：**A（选读）**
 - 对 packraft 的价值与边界（原路线）：补充“艇体变形与水动力相互影响”的水弹性框架；对象为机动滑行救生艇，不能据此证明背包船更软就更快、更稳或冲击更小。
-- 本地 PDF：`02_艇体水动力与性能/Hydroelastic Inflatable Boats: Relevant Literature and New Design Considerations.pdf`
-- 文件 SHA-256：`7234acea15b1ee2b0ccd86e4de3c63835eb7e6f8f48c8c5287e00cf589344340`
+- 本地中文译稿：`02_艇体水动力与性能/SRC-009-02_艇体水动力与性能-水弹性充气艇：相关文献与新的设计考虑.md`
+- 译稿原文件名（改名前）：`Halswell2012_Hydroelastic_Inflatable_Boats_中文.md`
+- 中文译稿 SHA-256：`ba073fc41ab1b5e7f0a0f1224d0edeb332a34fe4877d916985dee47f602539c0`
+- 原文 PDF：`02_艇体水动力与性能/Hydroelastic Inflatable Boats: Relevant Literature and New Design Considerations.pdf`
+- 原文 PDF SHA-256：`7234acea15b1ee2b0ccd86e4de3c63835eb7e6f8f48c8c5287e00cf589344340`
 
 #### SRC-010
 
 - source_id：`SRC-010`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`02_艇体水动力与性能`
-- 题名（原路线展示名）：Flexibility and Environmental Considerations
+- 中文题名（译稿标题）：充气艇的设计与性能：柔性与环境因素
+- 原路线题名（展示名）：Flexibility and Environmental Considerations
 - 作者标签（原路线）：Halswell 等
 - 年份（原路线）：2011
 - 阅读优先级：**B**
 - 对 packraft 的价值与边界（原路线）：同一团队的早期会议论文，柔性、船底变形与砰击内容和 2012 篇高度重叠；看摘要与结构图即可，发动机噪声部分当前可跳过。
-- 本地 PDF：`02_艇体水动力与性能/Design and Performance of Inflatable Boats: Flexibility and Environmental Considerations.pdf`
-- 文件 SHA-256：`7c5e5c65266acfc2d57e5917eb8ddf5383e100348e80de6a0080267ff43122b5`
+- 本地中文译稿：`02_艇体水动力与性能/SRC-010-02_艇体水动力与性能-充气艇的设计与性能：柔性与环境因素.md`
+- 译稿原文件名（改名前）：`Halswell2011_Design_Performance_Inflatable_Boats_中文.md`
+- 中文译稿 SHA-256：`db4c2cb32d7019b337575ec57ad016ff5d72faef5b2c7d370e7faf841ad5ec25`
+- 原文 PDF：`02_艇体水动力与性能/Design and Performance of Inflatable Boats: Flexibility and Environmental Considerations.pdf`
+- 原文 PDF SHA-256：`7c5e5c65266acfc2d57e5917eb8ddf5383e100348e80de6a0080267ff43122b5`
 
 ### 03｜激流回旋与控船
 
 #### SRC-011
 
 - source_id：`SRC-011`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`03_激流回旋与控船`
-- 题名（原路线展示名）：Upstream Gate Trajectory
+- 中文题名（译稿标题）：皮划艇激流回旋运动员通过逆流门时的船体轨迹
+- 原路线题名（展示名）：Upstream Gate Trajectory
 - 作者标签（原路线）：Hunter
 - 年份（原路线）：2009
 - 阅读优先级：**S**
 - 对 packraft 的价值与边界（原路线）：用上水门轨迹分析选线与耗时，能启发进回水路径；**没有直接测量 eddy line 的流场**。
-- 本地 PDF：`03_激流回旋与控船/Hunter2009_Upstream_Gate_Trajectory.pdf`
-- 文件 SHA-256：`7663d17e2480e6bc312651a4951d5f21211bc1df830c23831eb92d688af672e0`
+- 本地中文译稿：`03_激流回旋与控船/SRC-011-03_激流回旋与控船-皮划艇激流回旋运动员通过逆流门时的船体轨迹.md`
+- 译稿原文件名（改名前）：`Hunter2009_Upstream_Gate_Trajectory_中文.md`
+- 中文译稿 SHA-256：`b7641712070804b43dcffad3853430b12173ce0807d4bbb423aacf7b7f9d8c7c`
+- 原文 PDF：`03_激流回旋与控船/Hunter2009_Upstream_Gate_Trajectory.pdf`
+- 原文 PDF SHA-256：`7663d17e2480e6bc312651a4951d5f21211bc1df830c23831eb92d688af672e0`
 
 #### SRC-012
 
 - source_id：`SRC-012`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`03_激流回旋与控船`
-- 题名（原路线展示名）：Canoe Slalom Review
+- 中文题名（译稿标题）：力学、生理学与技术参数同皮划艇激流回旋表现之间的关联：一项系统综述
+- 原路线题名（展示名）：Canoe Slalom Review
 - 作者标签（原路线）：Messias 等
 - 年份（原路线）：2021
 - 阅读优先级：**A**
 - 对 packraft 的价值与边界（原路线）：快速找到回旋项目中机械、生理和技术证据及研究限制；不是具体控船动作的因果证明。
-- 本地 PDF：`03_激流回旋与控船/Messias2021_Canoe_Slalom_Performance_Review.pdf`
-- 文件 SHA-256：`a7021d8411558cba3684b3aff7184ce3e176fa7c502617a5c95864ac9ec8db8e`
+- 本地中文译稿：`03_激流回旋与控船/SRC-012-03_激流回旋与控船-力学、生理学与技术参数同皮划艇激流回旋表现之间的关联：一项系统综述.md`
+- 译稿原文件名（改名前）：`Messias2021_Canoe_Slalom_Performance_Review_中文.md`
+- 中文译稿 SHA-256：`9293279cb5197920d3576031bf367fe055ee9de4a7fed7febfa946d31e6afeb0`
+- 原文 PDF：`03_激流回旋与控船/Messias2021_Canoe_Slalom_Performance_Review.pdf`
+- 原文 PDF SHA-256：`a7021d8411558cba3684b3aff7184ce3e176fa7c502617a5c95864ac9ec8db8e`
 
 #### SRC-013
 
 - source_id：`SRC-013`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`03_激流回旋与控船`
-- 题名（原路线展示名）：Novel Paddle Stroke Analysis
+- 中文题名（译稿标题）：精英激流回旋皮艇运动员的新型划桨动作分析：与力参数的关系
+- 原路线题名（展示名）：Novel Paddle Stroke Analysis
 - 作者标签（原路线）：Messias 等
 - 年份（原路线）：2018
 - 阅读优先级：**B**
 - 对 packraft 的价值与边界（原路线）：了解精英回旋桨手的桨次与测力指标；系绳全力测试不等于真实过回水线。
-- 本地 PDF：`03_激流回旋与控船/精英激流回旋皮划艇运动员的新型划桨动作分析：与力参数的关系-english.pdf`
-- 文件 SHA-256：`b01087678d5eb78638c713ddaa4f210a5b6a90a3858dce388edc5a3ae5c1e8c9`
+- 本地中文译稿：`03_激流回旋与控船/SRC-013-03_激流回旋与控船-精英激流回旋皮艇运动员的新型划桨动作分析：与力参数的关系.md`
+- 译稿原文件名（改名前）：`03_精英激流回旋划桨动作分析_中文.md`
+- 中文译稿 SHA-256：`74060b429b6ad5b4916e50ba072ac80945125c676ebf39c593ceda8e892fc407`
+- 原文 PDF：`03_激流回旋与控船/精英激流回旋皮划艇运动员的新型划桨动作分析：与力参数的关系-english.pdf`
+- 原文 PDF SHA-256：`b01087678d5eb78638c713ddaa4f210a5b6a90a3858dce388edc5a3ae5c1e8c9`
 
 ### 04｜白水河流流体力学
 
 #### SRC-014
 
 - source_id：`SRC-014`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`04_白水河流流体力学`
-- 题名（原路线展示名）：Lateral Cavity Mixing Interface
+- 中文题名（译稿标题）：方形明渠侧向凹腔混合界面处的相干紊流结构
+- 原路线题名（展示名）：Lateral Cavity Mixing Interface
 - 作者标签（原路线）：Mignot 等
 - 年份（原路线）：2016
 - 阅读优先级：**S**
 - 对 packraft 的价值与边界（原路线）：看主流与侧向回流之间的剪切层和大尺度涡；水槽侧腔是回水的简化模型。
-- 本地 PDF：`04_白水河流流体力学/Coherent turbulent structures at the mixing-interface of a square open-channel lateral cavity.pdf`
-- 文件 SHA-256：`2c05ec050942156b70fab6a70ef2a31c45d6c0b02559377f604c786dbfdc9d67`
+- 本地中文译稿：`04_白水河流流体力学/SRC-014-04_白水河流流体力学-方形明渠侧向凹腔混合界面处的相干紊流结构.md`
+- 译稿原文件名（改名前）：`Coherent turbulent structures at the mixing-interface of a square open-channel lateral cavity_中文.md`
+- 中文译稿 SHA-256：`eea69c776c34a938698a005d5025d905f87430e6bb5acf7f37e073ecf730a927`
+- 原文 PDF：`04_白水河流流体力学/Coherent turbulent structures at the mixing-interface of a square open-channel lateral cavity.pdf`
+- 原文 PDF SHA-256：`2c05ec050942156b70fab6a70ef2a31c45d6c0b02559377f604c786dbfdc9d67`
 
 #### SRC-015
 
 - source_id：`SRC-015`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`04_白水河流流体力学`
-- 题名（原路线展示名）：Crystal Rapid Hydraulic Jump
+- 中文题名（译稿标题）：1983 年 Crystal Rapid 的水跃：对大峡谷行舟与地貌演化的启示
+- 原路线题名（展示名）：Crystal Rapid Hydraulic Jump
 - 作者标签（原路线）：Kieffer
 - 年份（原路线）：1985
 - 阅读优先级：**S**
 - 对 packraft 的价值与边界（原路线）：把天然急流大波、水跃和河道收缩放在同一案例中；个案不构成普遍行船规则。
-- 本地 PDF：`04_白水河流流体力学/The 1983 Hydraulic Jump in Crystal Rapid - Implications for River-Running and Geomorphic Evolution in the Grand Canyon.pdf`
-- 文件 SHA-256：`83c20b0dd0992c917d769ee8dea110caa35968dbd21a0c12d7d789e057178217`
+- 本地中文译稿：`04_白水河流流体力学/SRC-015-04_白水河流流体力学-1983 年 Crystal Rapid 的水跃：对大峡谷行舟与地貌演化的启示.md`
+- 译稿原文件名（改名前）：`Kieffer1985_Crystal_Rapid_Hydraulic_Jump_中文.md`
+- 中文译稿 SHA-256：`2b62f153a3799643416cd9838b12cd3fc46421c6c4d3eb5cb740d8573f40e40f`
+- 原文 PDF：`04_白水河流流体力学/The 1983 Hydraulic Jump in Crystal Rapid - Implications for River-Running and Geomorphic Evolution in the Grand Canyon.pdf`
+- 原文 PDF SHA-256：`83c20b0dd0992c917d769ee8dea110caa35968dbd21a0c12d7d789e057178217`
 
 #### SRC-016
 
 - source_id：`SRC-016`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`04_白水河流流体力学`
-- 题名（原路线展示名）：Hydraulic Jumps Review
+- 中文题名（译稿标题）：水跃及相关现象的现有认识：实验结果综述
+- 原路线题名（展示名）：Hydraulic Jumps Review
 - 作者标签（原路线）：Chanson
 - 年份（原路线）：2009
 - 阅读优先级：**A**
 - 对 packraft 的价值与边界（原路线）：区分起伏水跃、破碎水跃、滚水及掺气，建立浪和洞的概念框架。
-- 本地 PDF：`04_白水河流流体力学/Current knowledge in hydraulic jumps and related phenomena. A survey of experimental results.pdf`
-- 文件 SHA-256：`8569b879642a7700b5d252f41f21eb1c6589bb62744a9506e795864b340fbd40`
+- 本地中文译稿：`04_白水河流流体力学/SRC-016-04_白水河流流体力学-水跃及相关现象的现有认识：实验结果综述.md`
+- 译稿原文件名（改名前）：`Chanson2009_Hydraulic_Jumps_Review_中文.md`
+- 中文译稿 SHA-256：`7274d9b72246a183c05fe1b3d75821b1c71dd047f24f8b2beef0d300f8a3b0e8`
+- 原文 PDF：`04_白水河流流体力学/Current knowledge in hydraulic jumps and related phenomena. A survey of experimental results.pdf`
+- 原文 PDF SHA-256：`8569b879642a7700b5d252f41f21eb1c6589bb62744a9506e795864b340fbd40`
 
 #### SRC-017
 
 - source_id：`SRC-017`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`04_白水河流流体力学`
-- 题名（原路线展示名）：River Steps
+- 中文题名（译稿标题）：河床台阶处能量耗散和水跃流态对河道非均匀性的响应建模
+- 原路线题名（展示名）：River Steps
 - 作者标签（原路线）：Wyrick & Pasternack
 - 年份（原路线）：2008
 - 阅读优先级：**A**
 - 对 packraft 的价值与边界（原路线）：理解同一落差随流量、淹没程度和河道几何变化而呈现不同水跃形态。
-- 本地 PDF：`04_白水河流流体力学/Modeling energy dissipation and hydraulic jump regime responses to channel nonuniformity at river steps.pdf`
-- 文件 SHA-256：`b8b9f3845525ac3a284e41214f0e88189534337d30227c581769d71e5e4bce9c`
+- 本地中文译稿：`04_白水河流流体力学/SRC-017-04_白水河流流体力学-河床台阶处能量耗散和水跃流态对河道非均匀性的响应建模.md`
+- 译稿原文件名（改名前）：`Wyrick2008_River_Step_Hydraulics_中文.md`
+- 中文译稿 SHA-256：`548be15598c34f7367585e1e0017edea9c0fed435e444fc004f3cea33661067d`
+- 原文 PDF：`04_白水河流流体力学/Modeling energy dissipation and hydraulic jump regime responses to channel nonuniformity at river steps.pdf`
+- 原文 PDF SHA-256：`b8b9f3845525ac3a284e41214f0e88189534337d30227c581769d71e5e4bce9c`
 
 #### SRC-018
 
 - source_id：`SRC-018`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`04_白水河流流体力学`
-- 题名（原路线展示名）：Shallow Mixing Layer
+- 中文题名（译稿标题）：突然展宽下游的浅水混合层
+- 原路线题名（展示名）：Shallow Mixing Layer
 - 作者标签（原路线）：Han 等
 - 年份（原路线）：2017
 - 阅读优先级：**A**
 - 对 packraft 的价值与边界（原路线）：研究突然扩宽后的主流、回流及其边界，可接在 Mignot 后看；仍是理想化几何。
-- 本地 PDF：`04_白水河流流体力学/Shallow Mixing Layer Downstream from a Sudden Expansion.pdf`
-- 文件 SHA-256：`ebd31852220b24bbb2416a69991e3782fef6e1e20047960d39119fcecfac9857`
+- 本地中文译稿：`04_白水河流流体力学/SRC-018-04_白水河流流体力学-突然展宽下游的浅水混合层.md`
+- 译稿原文件名（改名前）：`Han2017_Shallow_Mixing_Layer_中文.md`
+- 中文译稿 SHA-256：`d8b1ec542d350f9cdb1d8d8bc69ce1cc396f324fdfd2da7c64bf91be00b50ed8`
+- 原文 PDF：`04_白水河流流体力学/Shallow Mixing Layer Downstream from a Sudden Expansion.pdf`
+- 原文 PDF SHA-256：`ebd31852220b24bbb2416a69991e3782fef6e1e20047960d39119fcecfac9857`
 
 #### SRC-019
 
 - source_id：`SRC-019`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`04_白水河流流体力学`
-- 题名（原路线展示名）：Submerged Boulder Arrays
+- 中文题名（译稿标题）：淹没石块群中石块密集度对明渠紊流与泥沙输运的影响
+- 原路线题名（展示名）：Submerged Boulder Arrays
 - 作者标签（原路线）：Fang、Liu & Stoesser
 - 年份（原路线）：2017
 - 阅读优先级：**B**
 - 对 packraft 的价值与边界（原路线）：帮助理解石块间距如何改变尾流及局部剪应力；固定水深、采用刚盖水面的大涡模拟，不能直接解释水位变化、水面浪洞或背包船停靠回水。
-- 本地 PDF：`04_白水河流流体力学/Influence of Boulder Concentration on Turbulence and Sediment Transport in Open-Channel Flow Over Submerged Boulders.pdf`
-- 文件 SHA-256：`41948a2a807722fdd64021fbd738914b21ccaedeab011c43be5d8d35b2126542`
+- 本地中文译稿：`04_白水河流流体力学/SRC-019-04_白水河流流体力学-淹没石块群中石块密集度对明渠紊流与泥沙输运的影响.md`
+- 译稿原文件名（改名前）：`Fang2017_Boulder_Concentration_and_Turbulence_中文.md`
+- 中文译稿 SHA-256：`fd4d94bb35b1540dcf089e04a1939044413dd81d32c983d15885ddafcb3057f0`
+- 原文 PDF：`04_白水河流流体力学/Influence of Boulder Concentration on Turbulence and Sediment Transport in Open-Channel Flow Over Submerged Boulders.pdf`
+- 原文 PDF SHA-256：`41948a2a807722fdd64021fbd738914b21ccaedeab011c43be5d8d35b2126542`
 
 #### SRC-020
 
 - source_id：`SRC-020`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`04_白水河流流体力学`
-- 题名（原路线展示名）：Rough-bed Open-channel Flow
+- 中文题名（译稿标题）：粗糙河床明渠流中的超大尺度运动
+- 原路线题名（展示名）：Rough-bed Open-channel Flow
 - 作者标签（原路线）：Cameron 等
 - 年份（原路线）：2017
 - 阅读优先级：**B**
 - 对 packraft 的价值与边界（原路线）：提醒河床粗糙度和大尺度湍流会改变实际来流；当前控船学习先看图与结论。
-- 本地 PDF：`04_白水河流流体力学/Very-large-scale motions in rough-bed open-channel flow.pdf`
-- 文件 SHA-256：`c769a620816a104502c31c3b6d288e6e702dfb7e2e43d79b2b33b666f7c29929`
+- 本地中文译稿：`04_白水河流流体力学/SRC-020-04_白水河流流体力学-粗糙河床明渠流中的超大尺度运动.md`
+- 译稿原文件名（改名前）：`Cameron2017_Very_Large_Scale_Motions_中文.md`
+- 中文译稿 SHA-256：`559c9f71243c78dce45a32ca091df67ff24ba019d102a3be37ea29bd545b6df9`
+- 原文 PDF：`04_白水河流流体力学/Very-large-scale motions in rough-bed open-channel flow.pdf`
+- 原文 PDF SHA-256：`c769a620816a104502c31c3b6d288e6e702dfb7e2e43d79b2b33b666f7c29929`
 
 ### 05｜人体生物力学与训练
 
 #### SRC-021
 
 - source_id：`SRC-021`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`05_人体生物力学与训练`
-- 题名（原路线展示名）：Determinants of Kayak Paddling Performance
+- 中文题名（译稿标题）：皮艇划桨表现的决定因素
+- 原路线题名（展示名）：Determinants of Kayak Paddling Performance
 - 作者标签（原路线）：Michael 等
 - 年份（原路线）：2009
 - 阅读优先级：**A**
 - 对 packraft 的价值与边界（原路线）：把人、桨、艇与竞速表现串成知识地图；多是静水竞速证据。
-- 本地 PDF：`05_人体生物力学与训练/Determinants of kayak paddling performance.pdf`
-- 文件 SHA-256：`ff925bb6646cc3fdd2120709158c14a6fca442dd16065c1464c291b715e7e9e8`
+- 本地中文译稿：`05_人体生物力学与训练/SRC-021-05_人体生物力学与训练-皮艇划桨表现的决定因素.md`
+- 译稿原文件名（改名前）：`Determinants_of_kayak_paddling_performance_中文.md`
+- 中文译稿 SHA-256：`2072d73d4d52d580f71b0f1f96d24ec6e9e0116acc43665dc69960396e8c18ed`
+- 原文 PDF：`05_人体生物力学与训练/Determinants of kayak paddling performance.pdf`
+- 原文 PDF SHA-256：`ff925bb6646cc3fdd2120709158c14a6fca442dd16065c1464c291b715e7e9e8`
 
 ### 90｜低优先级或参考
 
 #### SRC-022
 
 - source_id：`SRC-022`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`90_低优先级或参考`
-- 题名（原路线展示名）：Wing Paddle Technique
+- 中文题名（译稿标题）：精英静水皮艇划手使用翼桨的技术
+- 原路线题名（展示名）：Wing Paddle Technique
 - 作者标签（原路线）：Kendal & Sanders
 - 年份（原路线）：1992
 - 阅读优先级：**C**
 - 对 packraft 的价值与边界（原路线）：可看桨叶相对水的轨迹测量；翼桨和白水桨差异大，不按其动作练习。
-- 本地 PDF：`90_低优先级或参考/The Technique of Elite Flatwater Kayak Paddlers Using the Wing Paddle.pdf`
-- 文件 SHA-256：`c090f10915f18321605dbdf3ca63502e81d1a9023f6f64ebd0506456d091fd64`
+- 本地中文译稿：`90_低优先级或参考/SRC-022-90_低优先级或参考-精英静水皮艇划手使用翼桨的技术.md`
+- 译稿原文件名（改名前）：`Kendal1992_Wing_Paddle_Technique_中文.md`
+- 中文译稿 SHA-256：`0eeb7d447285fea160979534f548d0e84b28bc2aee7f30110ae7da5ed086e310`
+- 原文 PDF：`90_低优先级或参考/The Technique of Elite Flatwater Kayak Paddlers Using the Wing Paddle.pdf`
+- 原文 PDF SHA-256：`c090f10915f18321605dbdf3ca63502e81d1a9023f6f64ebd0506456d091fd64`
 
 #### SRC-023
 
 - source_id：`SRC-023`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`90_低优先级或参考`
-- 题名（原路线展示名）：Instrumented Kayak Paddle
+- 中文题名（译稿标题）：皮艇桨的仪器化研究：探究桨叶与水的相互作用
+- 原路线题名（展示名）：Instrumented Kayak Paddle
 - 作者标签（原路线）：Helmer 等
 - 年份（原路线）：2011
 - 阅读优先级：**C**
 - 对 packraft 的价值与边界（原路线）：若以后自制测力桨，可参考传感器布置；论文也说明单点压力并不能直接给出整桨力。
-- 本地 PDF：`90_低优先级或参考/皮划艇桨的仪器化研究以探究桨叶:水的相互作用-english-Instrumentation-of-a-kayak-paddle-to-investigate-blade-_2011_Procedia-Engine.pdf`
-- 文件 SHA-256：`ae1563e2fd53c13bf522ceab26d315d83b28765e138349d52b3491099461f261`
+- 本地中文译稿：`90_低优先级或参考/SRC-023-90_低优先级或参考-皮艇桨的仪器化研究：探究桨叶与水的相互作用.md`
+- 译稿原文件名（改名前）：`02_桨叶与水相互作用_中文.md`
+- 中文译稿 SHA-256：`8d413e5eed3cf57c3d7a8ac58374cb695348849c170f894260d654b4f632352a`
+- 原文 PDF：`90_低优先级或参考/皮划艇桨的仪器化研究以探究桨叶:水的相互作用-english-Instrumentation-of-a-kayak-paddle-to-investigate-blade-_2011_Procedia-Engine.pdf`
+- 原文 PDF SHA-256：`ae1563e2fd53c13bf522ceab26d315d83b28765e138349d52b3491099461f261`
 
 #### SRC-024
 
 - source_id：`SRC-024`
-- 类型：论文
+- 类型：论文（本地中文译稿；与原文同一来源）
 - 分类：`90_低优先级或参考`
-- 题名（原路线展示名）：Inflatable Boat Motion CFD
+- 中文题名（译稿标题）：自由水面流动中充气艇运动的 CFD 模拟
+- 原路线题名（展示名）：Inflatable Boat Motion CFD
 - 作者标签（原路线）：Aksoy & Kükner
 - 年份（原路线）：2023
 - 阅读优先级：**C**
 - 对 packraft 的价值与边界（原路线）：自由水面 CFD 与惯性测量对照可作方法参考，但图 18 的工况是水滑道中的充气载具；忽略艇内空气作用与柔性变形，不补背包船水弹性或回水控船缺口。
-- 本地 PDF：`90_低优先级或参考/Simulation of Inflatable Boat Motion with CFD on Free Surface Flows.pdf`
-- 文件 SHA-256：`d09084f0c2365c48501589a6e924a448d71d42d56e8deca2acce0d11e5a7e63c`
+- 本地中文译稿：`90_低优先级或参考/SRC-024-90_低优先级或参考-自由水面流动中充气艇运动的 CFD 模拟.md`
+- 译稿原文件名（改名前）：`Aksoy2023_Inflatable_Boat_Motion_CFD_中文.md`
+- 中文译稿 SHA-256：`a1b254c1055c87b461d05150b30c667e688a9475ea180ad33cc180cd94dcfff2`
+- 原文 PDF：`90_低优先级或参考/Simulation of Inflatable Boat Motion with CFD on Free Surface Flows.pdf`
+- 原文 PDF SHA-256：`d09084f0c2365c48501589a6e924a448d71d42d56e8deca2acce0d11e5a7e63c`
 
 ## 建议阅读顺序（原路线，附 source_id）
 
